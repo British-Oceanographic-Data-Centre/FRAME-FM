@@ -3,8 +3,6 @@ description: File a framework review report.
 title: "[framework]: "
 labels: ["documentation"]
 projects: ["British-Oceanographic-Data-Centre/3"]
-assignees:
-  - 
 body:
   - type: markdown
     attributes:
@@ -14,14 +12,14 @@ body:
     id: framework-name
     attributes:
       label: Framework Name
-      description: What is this framework called      
+      description: What is this framework called
     validations:
       required: true
   - type: input
     id: framework-location
     attributes:
       label: Framework documentation
-      description: Where can we find the official documentation for this framework     
+      description: Where can we find the official documentation for this framework
     validations:
       required: false
   - type: input
@@ -41,7 +39,7 @@ body:
       value: "It does some cool stuff, guys"
     validations:
       required: false
-   - type: markdown
+  - type: markdown
     attributes:
       value: |
         --------
@@ -62,7 +60,7 @@ body:
     id: code-location
     attributes:
       label: Framework's code
-      description: Where can we find the code for this framework     
+      description: Where can we find the code for this framework
     validations:
       required: false
   - type: input
@@ -86,7 +84,7 @@ body:
     id: works-with
     attributes:
       label: This framework runs on
-      description: please select all options that fit 
+      description: please select all options that fit
       options:
         - label: HPC
         - label: kubernetes
@@ -94,7 +92,7 @@ body:
     id: general-questions
     attributes:
       label: This framework can
-      description: please select all options that fit 
+      description: please select all options that fit
       options:
         - label: train foundation models
         - label: fine-tune models
@@ -104,4 +102,3 @@ body:
     attributes:
       label: Relevant additional information
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      
