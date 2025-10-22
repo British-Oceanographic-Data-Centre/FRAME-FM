@@ -70,16 +70,6 @@ body:
       description: I.E, how many stars on GitHub / likes on GitLab
     validations:
       required: false
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: false
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: checkboxes
     id: works-with
     attributes:
