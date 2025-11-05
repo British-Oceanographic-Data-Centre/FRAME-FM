@@ -70,6 +70,20 @@ body:
       description: I.E, how many stars on GitHub / likes on GitLab
     validations:
       required: false
+  - type: input
+    id: supported
+    attributes:
+      label: Is the project/framework stable and supported?
+      description: Looking at the most recent releases and commits, latest python version, background history.
+    validations:
+      required: false
+  - type: input
+    id: environmental
+    attributes:
+      label: Are there example uses of the framework within the environmental domain?
+      description: Are people already using it in our community? Examples.
+    validations:
+      required: false
   - type: checkboxes
     id: works-with
     attributes:
