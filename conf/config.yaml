@@ -1,0 +1,23 @@
+# Hydra Configuration for torchx_mlflow_demo
+
+# MLflow settings
+mlflow:
+  tracking_uri: "http://127.0.0.1:5000"
+  experiment_name: "torchx_lightning_demo"
+  run_name: "hydra_lightning_run"
+
+# Data settings
+data:
+  num_images: 10
+  batch_size: 16
+  num_samples: 5
+
+# Model settings
+model:
+  lr: 0.002
+
+# Trainer settings
+trainer:
+  max_epochs: 5
+  accelerator: "auto"
+  devices: "auto"

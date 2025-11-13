@@ -1,0 +1,15 @@
+
+from .config import config
+from dataclasses import dataclass
+from hydra.core.config_store import ConfigStore
+
+
+@dataclass
+class IsambardConfig(config):
+    access_key: str = ""
+    secret_key: str = ""
+    username: str = ""
+    url: str = ""
+
+cs = ConfigStore.instance()
+cs.store(name="issibard", group="infrastructure", node=IsambardConfig)

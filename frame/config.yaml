@@ -1,0 +1,4 @@
+defaults:
+  - override hydra/launcher: submitit_local
+
+task: 1
