@@ -3,3 +3,7 @@ mlruns/
 outputs/
 .venv/
 .linux-venv/
+data/
+data/EuroSATallBands.zip
+lightning_logs/
+
